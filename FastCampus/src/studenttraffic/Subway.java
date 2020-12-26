@@ -1,0 +1,19 @@
+package studenttraffic;
+
+public class Subway {
+	int lineNum;
+	int passenger;
+	int money;
+	
+	public Subway(int lineNum) {
+		this.lineNum = lineNum;
+	}
+
+	public void take(int money) {
+		this.money = money;
+		passenger++;
+	}
+	public void showSubInfo() {
+		System.out.println(lineNum+" 지하철의 승객은 "+passenger+"명 이고, 수입은 "+money+"원 입니다.");
+	}
+}
